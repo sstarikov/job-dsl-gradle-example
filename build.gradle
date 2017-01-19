@@ -47,6 +47,7 @@ dependencies {
     testPlugins 'org.jenkins-ci.plugins:ghprb:1.31.4'
     testPlugins 'com.coravy.hudson.plugins.github:github:1.19.0'
     testPlugins 'org.jenkins-ci.plugins:cloudbees-folder:5.0'
+    testPlugins 'org.jenkins-ci.plugins:dashboard-view:2.9.7'
 
     // for the RestApiScriptRunner
     compile('org.codehaus.groovy.modules.http-builder:http-builder:0.7.2') {
