@@ -7,17 +7,6 @@ dashboardView('backend') {
         weather()
         buildButton()
     }
-    topPortlets {
-        jenkinsJobsList {
-            displayName('backend jobs')
-        }
-    }
-    leftPortlets {
-        testStatisticsChart()
-    }
-    rightPortlets {
-        testTrendChart()
-    }
 }
 dashboardView('frontend') {
     jobs {
@@ -28,17 +17,6 @@ dashboardView('frontend') {
         weather()
         buildButton()
     }
-    topPortlets {
-        jenkinsJobsList {
-            displayName('frontend jobs')
-        }
-    }
-    leftPortlets {
-        testStatisticsChart()
-    }
-    rightPortlets {
-        testTrendChart()
-    }
 }
 dashboardView('seedJob') {
     jobs {
@@ -48,16 +26,5 @@ dashboardView('seedJob') {
         status()
         weather()
         buildButton()
-    }
-    topPortlets {
-        jenkinsJobsList {
-            displayName('seed job')
-        }
-    }
-    leftPortlets {
-        testStatisticsChart()
-    }
-    rightPortlets {
-        testTrendChart()
     }
 }
