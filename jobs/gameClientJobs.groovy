@@ -8,7 +8,7 @@ freeStyleJob('gc-amazon-lady') {
         githubPush()
     }
     wrappers {
-        nodejs('NodeJS 0.10.26')
+        nodejs('NodeJS node7')
     }
     steps {
         shell('which node && node -v')
