@@ -7,8 +7,9 @@ freeStyleJob('gc-amazon-lady') {
     triggers {
         githubPush()
     }
+    concurrentBuild()
     wrappers {
-        nodejs('NodeJS 7.4.0')
+        nodejs('NodeJS node7')
     }
     steps {
         shell '''
