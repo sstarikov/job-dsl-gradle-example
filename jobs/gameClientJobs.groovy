@@ -11,7 +11,11 @@ freeStyleJob('gc-amazon-lady') {
         nodejs('NodeJS 7.4.0')
     }
     steps {
-        shell('which node && node -v')
+        shell '''
+            #!/bin/bash
+            which node
+            node -v
+        '''.stripIndent().trim()
     }
     publishers {
         archiveArtifacts('job-dsl-plugin/build/libs/job-dsl.hpi')
