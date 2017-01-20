@@ -8,7 +8,7 @@ freeStyleJob('gc-amazon-lady') {
         githubPush()
     }
     steps {
-        gradle('clean build')
+        shell('echo Hello World!')
     }
     publishers {
         archiveArtifacts('job-dsl-plugin/build/libs/job-dsl.hpi')
