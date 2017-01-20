@@ -4,8 +4,14 @@ dashboardView('backend') {
     }
     columns {
         status()
+        name()
         weather()
         buildButton()
+    }
+    topPortlets {
+        jenkinsJobsList {
+            displayName('backend jobs')
+        }
     }
 }
 dashboardView('frontend') {
@@ -14,8 +20,14 @@ dashboardView('frontend') {
     }
     columns {
         status()
+        name()
         weather()
         buildButton()
+    }
+    topPortlets {
+        jenkinsJobsList {
+            displayName('frontend jobs')
+        }
     }
 }
 dashboardView('seedJob') {
@@ -24,7 +36,13 @@ dashboardView('seedJob') {
     }
     columns {
         status()
+        name()
         weather()
         buildButton()
+    }
+    topPortlets {
+        jenkinsJobsList {
+            displayName('seed jobs')
+        }
     }
 }
