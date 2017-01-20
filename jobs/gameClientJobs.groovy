@@ -7,8 +7,11 @@ freeStyleJob('gc-amazon-lady') {
     triggers {
         githubPush()
     }
+    wrappers {
+        nodejs('NodeJS 0.10.26')
+    }
     steps {
-        shell('echo Hello World!')
+        shell('which node && node -v')
     }
     publishers {
         archiveArtifacts('job-dsl-plugin/build/libs/job-dsl.hpi')

@@ -6,7 +6,7 @@ job('seed') {
         github 'sstarikov/job-dsl-gradle-example'
     }
     triggers {
-        scm 'H/5 * * * *'
+        githubPush()
     }
     steps {
         gradle 'clean test'
