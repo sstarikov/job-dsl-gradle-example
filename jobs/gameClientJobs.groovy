@@ -18,7 +18,4 @@ freeStyleJob('gc-amazon-lady') {
             node -v
         '''.stripIndent().trim()
     }
-    publishers {
-        archiveArtifacts('job-dsl-plugin/build/libs/job-dsl.hpi')
-    }
 }
